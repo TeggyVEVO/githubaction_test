@@ -34,3 +34,19 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Web Request Action
+        uses: Satak/webrequest-action@v1.2.3
+        with:
+          # Web request URL endpoint
+          url: https://api.chucknorris.io/jokes/random
+          # Web request method (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)
+          method: # default is GET
+          # Web request payload in JSON format
+          payload: # optional
+          # Web request headers in JSON format
+          headers: # optional
+          # username for BASIC auth
+          username: # optional
+          # password for BASIC auth
+          password: # optional
+          
